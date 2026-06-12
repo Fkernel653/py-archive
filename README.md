@@ -213,14 +213,14 @@ if is_one_of(value, (int, float, str)):
 
 ---
 
-## Terminal Styling (color-kiss)
+## Terminal Styling (colors)
 
 ANSI escape codes for terminal output formatting. Supports 16 colors, 8 text styles, background colors, and all combinations.
 
 ### Basic Colors & Styles
 
 ```python
-from color_kiss import RED, GREEN, BLUE, BOLD, UNDERLINE, RESET
+from colors import RED, GREEN, BLUE, BOLD, UNDERLINE, RESET
 
 print(f"{BOLD}{RED}Error:{RESET} Something went wrong")
 print(f"{GREEN}Success!{RESET}")
@@ -230,7 +230,7 @@ print(f"{UNDERLINE}{BLUE}Link{RESET}")
 ### Style Combinations
 
 ```python
-from color_kiss import BOLD_RED, ITALIC_BLUE, DIM_GREEN, BG_YELLOW
+from colors import BOLD_RED, ITALIC_BLUE, DIM_GREEN, BG_YELLOW
 
 print(f"{BOLD_RED}Critical Error")
 print(f"{ITALIC_BLUE}Note:")
@@ -240,7 +240,7 @@ print(f"{BG_YELLOW}{BOLD_BLACK}Warning{RESET}")
 ### Utility Functions
 
 ```python
-from color_kiss.utils import styled, success, error, warning, info
+from colors.utils import styled, success, error, warning, info
 
 # Pre-formatted messages
 print(error("File not found"))      # Error: File not found (bold red)
@@ -383,7 +383,7 @@ if NO_COLOR or CI:
     # Disable all styling
     RED = GREEN = BOLD = RESET = ""
 else:
-    from color_kiss import RED, GREEN, BOLD, RESET
+    from colors import RED, GREEN, BOLD, RESET
 ```
 
 ---

@@ -1,12 +1,12 @@
 """
-color-kiss - ANSI color codes for terminal output formatting.
+colors - ANSI color codes for terminal output formatting.
 
 A lightweight library providing ANSI escape codes for terminal text styling.
 Supports 16 colors, 8 text styles, background colors, and all combinations.
 
 Usage:
-    from color_kiss import RED, GREEN, RESET, BOLD_RED, ITALIC_BLUE
-    from color_kiss.utils import styled, success, error
+    from colors import RED, GREEN, RESET, BOLD_RED, ITALIC_BLUE
+    from colors.utils import styled, success, error
 
     print(f"{BOLD_RED}Error:{RESET} {error('Something went wrong')}")
 """
