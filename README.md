@@ -19,7 +19,7 @@ A collection of Python utilities designed for easy copying and use in your own p
   - [Attribute Access](#fast_funcsattr--fast-attribute-operations)
   - [Search Operations](#fast_funcssearch--fast-search--membership)
   - [Type Checking](#fast_funcstypes--fast-type-checking)
-- [Terminal Styling (color-kiss)](#terminal-styling-color-kiss)
+- [Terminal Styling (colors)](#terminal-styling-colors)
   - [Basic Colors & Styles](#basic-colors--styles)
   - [Style Combinations](#style-combinations)
   - [Utility Functions](#utility-functions)
