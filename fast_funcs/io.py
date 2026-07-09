@@ -1,7 +1,7 @@
 """Fast I/O operations."""
 
 import sys
-from typing import Iterable, Optional, TextIO
+from typing import Optional, TextIO
 
 
 def echo(
@@ -27,21 +27,6 @@ def echo(
     file.write(sep.join([str(arg) for arg in args]) + end)
     if flush:
         file.flush()
-
-
-def write_lines(items: Iterable, file: TextIO = sys.stdout, sep: str = "\n") -> None:
-    """Write multiple items with a single write call.
-
-    Args:
-        items: Iterable of items to write.
-        file: File to write to (default: stdout).
-        sep: Separator between items (default: newline).
-
-    Example:
-        >>> write_lines([1, 2, 3], sep=", ")
-        1, 2, 3
-    """
-    file.write(sep.join(map(str, items)))
 
 
 def fast_input(prompt: Optional[str] = None) -> str:
