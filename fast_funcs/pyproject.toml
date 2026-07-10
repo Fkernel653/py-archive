@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fast-funcs"
+version = "0.1.0"
+description = "Drop-in replacements for Python's built-in functions with better performance, lower overhead, and specialized optimizations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "Fkernel653"}
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["fast_funcs"]

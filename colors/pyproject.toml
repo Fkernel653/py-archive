@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "colors"
+version = "0.1.0"
+description = "A lightweight library providing ANSI escape codes for terminal text styling. Supports 16 colors, 8 text styles, background colors, and all combinations with zero dependencies"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Fkernel653"}
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["colors"]
