@@ -9,26 +9,16 @@ A lightweight library providing ANSI escape codes for terminal text styling. Sup
 
 ---
 
-## 📂 Part of py-archive
-
-This module is part of the [py-archive](https://github.com/Fkernel653/py-archive) — a curated collection of reusable Python utilities.
-
-**Location:** `colors/`
-
----
-
 ## 🚀 Quick Start
 
-### Copy into your project (Recommended)
-Simply copy the `colors/` directory into your project:
-
+### Copy into your project
 ```bash
 cp -r colors/ your-project/src/
 ```
 
 ```python
-from colors import RED, GREEN, RESET, BOLD_RED
-from colors.utils import styled, success, error, warning, info
+from colors import RED, GREEN, RESET, BOLD_RED, BG_BLUE
+from colors.utils import styled, success, error, warning, info, hint
 
 # Use color constants directly
 print(f"{BOLD_RED}Error:{RESET} Something went wrong")
@@ -39,26 +29,21 @@ success("Download complete")
 error("File not found")
 warning("Low disk space")
 info("Processing 3 files")
+hint("Try using --help for more options")
 
 # Custom styling
 print(styled("Hello World", BOLD_RED, BG_BLUE))
 ```
 
-### Or clone the entire archive
-```bash
-git clone https://github.com/Fkernel653/py-archive.git
-cd py-archive/colors
-```
-
 ---
 
-## 🎯 Features
+## ✨ Features
 
 - **🎨 16 Colors** — 8 base + 8 bright colors
 - **💪 8 Text Styles** — Bold, Dim, Italic, Underline, Blink, Reverse, Hidden, Strikethrough
 - **🖍️ Background Colors** — All colors also available as backgrounds
 - **🔗 Style Combinations** — Every style + color combination pre-defined (172+ constants)
-- **🏷️ Semantic Helpers** — `success()`, `error()`, `warning()`, `info()`
+- **🏷️ Semantic Helpers** — `success()`, `error()`, `warning()`, `info()`, `hint()`
 - **🔧 Custom Styling** — `styled()` function for arbitrary combinations
 - **🧩 Zero Dependencies** — Pure Python, only standard library
 - **📦 Copy & Use** — No installation required, just copy the code
@@ -74,7 +59,7 @@ colors/
 ├── colors/
 │   ├── __init__.py      # Package exports
 │   ├── _constants.py    # 172+ color and style constants
-│   └── utils.py         # Semantic helpers: styled, success, error, warning, info
+│   └── utils.py         # Semantic helpers: styled, success, error, warning, info, hint
 ├── LICENSE              # MIT License
 ├── pyproject.toml       # Project metadata
 └── README.md            # This file
@@ -89,10 +74,10 @@ colors/
 
 ---
 
-## 📄 License & Acknowledgments
+## 📄 License
 
 MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 
-**Project:** [py-archive](https://github.com/Fkernel653/py-archive) • [Colors](https://github.com/Fkernel653/py-archive/tree/main/colors)
+**Repository:** [github.com/Fkernel653/py-archive/tree/main/colors](https://github.com/Fkernel653/py-archive/tree/main/colors)

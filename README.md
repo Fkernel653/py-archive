@@ -73,8 +73,6 @@ print(f"{BOLD_RED}Error:{RESET} Something went wrong")
 success("Operation completed")
 ```
 
-**PyPI:** [colors](https://pypi.org/project/colors-terminal/)
-
 **[→ Read more](colors/)**
 
 ---
@@ -95,8 +93,6 @@ from fast_funcs import types, numbers
 types.is_exact_type(42, int)  # True
 numbers.square(5)             # 25 (15% faster than pow)
 ```
-
-**PyPI:** [fast-funcs](https://pypi.org/project/fast-funcs/)
 
 **[→ Read more](fast_funcs/)**
 

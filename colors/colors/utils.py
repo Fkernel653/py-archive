@@ -1,10 +1,11 @@
-from ._constants import BOLD_CYAN, BOLD_GREEN, BOLD_RED, BOLD_YELLOW, RESET
+from ._constants import BOLD_CYAN, BOLD_GREEN, BOLD_RED, BOLD_YELLOW, GRAY, RESET
 
 # Severity prefixes
 ERROR_PREFIX = BOLD_RED + "Error: " + RESET
 SUCCESS_PREFIX = BOLD_GREEN + "Success: " + RESET
 WARNING_PREFIX = BOLD_YELLOW + "Warning: " + RESET
 INFO_PREFIX = BOLD_CYAN + "Info: " + RESET
+HINT_PREFIX = GRAY + "Hint: " + RESET
 
 
 def styled(text: str, *styles: str) -> str:
@@ -91,3 +92,21 @@ def info(text: str) -> str:
         '\\033[1;36mInfo:\\033[0m Processing 3 files'
     """
     return INFO_PREFIX + text
+
+
+def hint(text: str) -> str:
+    """Format text as a hint message.
+
+    Adds 'Hint: ' prefix and colors everything in gray.
+
+    Args:
+        text (str): The message content.
+
+    Returns:
+        str: Formatted hint message.
+
+    Example:
+            >>> hint("Try using --help for more options")
+            '\\033[90mHint:\\033[0m Try using --help for more options'
+    """
+    return HINT_PREFIX + text
