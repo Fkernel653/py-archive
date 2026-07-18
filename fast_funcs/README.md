@@ -1,7 +1,7 @@
 # Fast-Funcs — High-performance alternatives to Python built-in functions
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
 [![Ruff](https://img.shields.io/badge/code%20style-ruff-261230?logo=ruff&logoColor=white)](https://docs.astral.sh/ruff)
 
@@ -52,7 +52,7 @@ fast_funcs/
 │   ├── io.py            # I/O operations: echo, fast_input
 │   ├── numbers.py       # Numeric operations: sum_precise, square, fast_round
 │   └── types.py         # Type checking: is_exact_type, is_one_of
-├── LICENSE              # MIT License
+├── LICENSE              # GPLv3 License
 ├── pyproject.toml       # Project metadata
 └── README.md            # This file
 ```
@@ -68,7 +68,7 @@ fast_funcs/
 
 ## 📄 License
 
-MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
+GPLv3 License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 

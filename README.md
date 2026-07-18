@@ -1,7 +1,7 @@
 # py-archive — Python Utilities Archive
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-green.svg)](LICENSE)
 
 A curated collection of reusable Python utilities organized by category. Each module is standalone, well-documented, and ready to copy into your projects.
 
@@ -105,7 +105,7 @@ numbers.square(5)             # 25 (15% faster than pow)
 - **Self-documenting** — Clear function names and comprehensive docstrings
 - **Single-purpose** — Each file does one thing well with no hidden couplings
 - **Production-ready** — Tested utilities used in real applications
-- **MIT licensed** — Use freely in open source and commercial projects
+- **GPLv3 licensed** — Use freely in open source and commercial projects
 
 ---
 
@@ -120,7 +120,7 @@ numbers.square(5)             # 25 (15% faster than pow)
 
 ## 📄 License & Acknowledgments
 
-MIT License — Use freely in open source and commercial projects.
+GPLv3 License — Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 

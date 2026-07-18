@@ -1,7 +1,7 @@
 # Colors — ANSI color codes for terminal output formatting
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
 [![Ruff](https://img.shields.io/badge/code%20style-ruff-261230?logo=ruff&logoColor=white)](https://docs.astral.sh/ruff)
 
@@ -60,7 +60,7 @@ colors/
 │   ├── __init__.py      # Package exports
 │   ├── _constants.py    # 172+ color and style constants
 │   └── utils.py         # Semantic helpers: styled, success, error, warning, info, hint
-├── LICENSE              # MIT License
+├── LICENSE              # GPLv3 License
 ├── pyproject.toml       # Project metadata
 └── README.md            # This file
 ```
@@ -76,7 +76,7 @@ colors/
 
 ## 📄 License
 
-MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
+GPLv3 License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 
