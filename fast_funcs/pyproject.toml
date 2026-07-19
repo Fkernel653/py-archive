@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Drop-in replacements for Python's built-in functions with better performance, lower overhead, and specialized optimizations"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "GPL-3.0-only"
+license = "MIT"
 authors = [
     {name = "Fkernel653"}
 ]
