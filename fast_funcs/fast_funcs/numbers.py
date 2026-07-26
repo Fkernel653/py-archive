@@ -1,10 +1,9 @@
 """Fast numeric operations."""
 
 import math
-from typing import List, Union
 
 
-def sum_precise(float_list: List[float]) -> float:
+def sum_precise(float_list: list[float]) -> float:
     """Sum floats with error compensation (more accurate than sum()).
 
     Args:
@@ -16,7 +15,7 @@ def sum_precise(float_list: List[float]) -> float:
     return math.fsum(float_list)
 
 
-def square(x: Union[int, float]) -> Union[int, float]:
+def square(x: float) -> int | float:
     """Fast square using multiplication (faster than pow(x, 2)).
 
     Args:
@@ -28,7 +27,7 @@ def square(x: Union[int, float]) -> Union[int, float]:
     return x * x
 
 
-def fast_round(x: float, decimals: int = 0) -> Union[int, float]:
+def fast_round(x: float, decimals: int = 0) -> int | float:
     """Round using integer operations (faster than round()).
 
     Args:

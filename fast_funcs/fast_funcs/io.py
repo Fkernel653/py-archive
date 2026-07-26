@@ -1,7 +1,7 @@
 """Fast I/O operations."""
 
 import sys
-from typing import Optional, TextIO
+from typing import TextIO
 
 
 def echo(
@@ -29,7 +29,7 @@ def echo(
         file.flush()
 
 
-def fast_input(prompt: Optional[str] = None) -> str:
+def read(prompt: str | None = None) -> str:
     """Read a line from stdin with optional prompt (faster than built-in input).
 
     Args:
@@ -39,14 +39,14 @@ def fast_input(prompt: Optional[str] = None) -> str:
         String without trailing newline character.
 
     Example:
-        >>> name = fast_input("Enter your name: ")
+        >>> name = read("Enter your name: ")
         Enter your name: Alice
         >>> name
         'Alice'
 
     Note:
         Unlike built-in input(), this doesn't add a space after the prompt.
-        Add it manually if needed: fast_input("Name: ")
+        Add it manually if needed: read("Name: ")
     """
     if prompt is not None:
         sys.stdout.write(prompt)

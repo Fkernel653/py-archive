@@ -21,8 +21,8 @@ from fast_funcs import types, numbers, io
 
 # Start using immediately
 types.is_exact_type(42, int)  # True
-numbers.square(5)             # 25
-io.echo("Hello", "World")     # Hello World
+numbers.square(5)  # 25
+io.echo("Hello", "World")  # Hello World
 ```
 
 ---
@@ -49,7 +49,7 @@ io.echo("Hello", "World")     # Hello World
 fast_funcs/
 ├── fast_funcs/
 │   ├── __init__.py      # Package exports
-│   ├── io.py            # I/O operations: echo, fast_input
+│   ├── io.py            # I/O operations: echo, read
 │   ├── numbers.py       # Numeric operations: sum_precise, square, fast_round
 │   └── types.py         # Type checking: is_exact_type, is_one_of
 ├── LICENSE              # MIT License
