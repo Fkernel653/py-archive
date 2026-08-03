@@ -1,6 +1,6 @@
 # py-archive — Python Utilities Archive
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-00b96b?style=for-the-badge)](LICENSE)
 
 A curated collection of reusable Python utilities organized by category. Each module is standalone, well-documented, and ready to copy into your projects.
 
