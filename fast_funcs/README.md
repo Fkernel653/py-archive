@@ -1,8 +1,8 @@
 # Fast-Funcs — High-performance alternatives to Python built-in functions
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=fff&style=for-the-badge)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-00b96b?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Unlicense-00b96b?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)](<>)
 [![Ruff](https://img.shields.io/badge/Code%20Style-Ruff-ff69b4?logo=ruff&logoColor=fff&style=for-the-badge)](https://docs.astral.sh/ruff)
 
 Drop-in replacements for Python's built-in functions with better performance, lower overhead, and specialized optimizations.
@@ -12,6 +12,7 @@ Drop-in replacements for Python's built-in functions with better performance, lo
 ## 🚀 Quick Start
 
 ### Copy into your project
+
 ```bash
 cp -r fast_funcs/ your-project/src/
 ```
@@ -68,7 +69,7 @@ fast_funcs/
 
 ## 📄 License
 
-MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
+Unlicense — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 

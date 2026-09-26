@@ -1,8 +1,8 @@
 # pathlib-ng — Enhanced Path implementation
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=fff&style=for-the-badge)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-00b96b?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Unlicense-00b96b?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)](<>)
 [![Ruff](https://img.shields.io/badge/Code%20Style-Ruff-ff69b4?logo=ruff&logoColor=fff&style=for-the-badge)](https://docs.astral.sh/ruff)
 
 A lightweight, drop-in replacement for `pathlib.Path` with enhanced features, better error messages, and zero external dependencies.
@@ -12,6 +12,7 @@ A lightweight, drop-in replacement for `pathlib.Path` with enhanced features, be
 ## 🚀 Quick Start
 
 ### Copy into your project
+
 ```bash
 cp -r pathlib_ng/ your-project/src/
 ```
@@ -91,6 +92,7 @@ p.write_text("Hello")
 ## 💡 Usage Examples
 
 ### Creating Paths
+
 ```python
 from pathlib_ng import Path
 
@@ -106,6 +108,7 @@ p = Path("projects") / "src" / "utils"
 ```
 
 ### Path Properties
+
 ```python
 p = Path("projects/docs/readme.md")
 
@@ -117,6 +120,7 @@ print(p.anchor)  # (empty string for relative path)
 ```
 
 ### File I/O
+
 ```python
 p = Path("data.txt")
 
@@ -134,6 +138,7 @@ with open(p, "a") as f:
 ```
 
 ### Directory Operations
+
 ```python
 # Create directories
 p = Path("projects/my_app/data")
@@ -155,6 +160,7 @@ home = Path.home()
 ```
 
 ### File Management
+
 ```python
 p = Path("file.txt")
 
@@ -181,6 +187,7 @@ print(f"Modified: {stat.st_mtime}")
 ```
 
 ### Path Resolution
+
 ```python
 # Resolve to absolute path (with symlinks resolved)
 p = Path("docs/../src/main.py")
@@ -195,6 +202,7 @@ expanded = p.expanduser()  # /home/username/Documents/file.txt
 ```
 
 ### Glob Patterns
+
 ```python
 # Find all Python files
 for py_file in Path.cwd().glob("*.py"):
@@ -217,6 +225,7 @@ Path.cwd().glob("src/**/*.py")  # All Python files in src/ and subdirectories
 ## 💡 Real-World Examples
 
 ### Recursive File Search
+
 ```python
 from pathlib_ng import Path
 
@@ -232,6 +241,7 @@ for f in txt_files:
 ```
 
 ### Project Structure Validation
+
 ```python
 from pathlib_ng import Path
 
@@ -255,6 +265,7 @@ for file_name in required_files:
 ```
 
 ### Batch File Processing
+
 ```python
 from pathlib_ng import Path
 
@@ -289,7 +300,7 @@ def process_logs(log_dir):
 
 ## 📄 License
 
-MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
+Unlicense — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 

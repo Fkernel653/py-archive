@@ -1,8 +1,8 @@
 # Colors — ANSI color codes for terminal output formatting
 
 [![Python](https://img.shields.io/badge/Python-3+-3776AB?logo=python&logoColor=fff&style=for-the-badge)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-00b96b?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Unlicense-00b96b?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-9cf?style=for-the-badge)](<>)
 [![Ruff](https://img.shields.io/badge/Code%20Style-Ruff-ff69b4?logo=ruff&logoColor=fff&style=for-the-badge)](https://docs.astral.sh/ruff)
 
 A lightweight library providing ANSI escape codes for terminal text styling. Supports 16 colors, 8 text styles, background colors, and all combinations with zero dependencies.
@@ -12,6 +12,7 @@ A lightweight library providing ANSI escape codes for terminal text styling. Sup
 ## 🚀 Quick Start
 
 ### Copy into your project
+
 ```bash
 cp -r colors/ your-project/src/
 ```
@@ -76,7 +77,7 @@ colors/
 
 ## 📄 License
 
-MIT License — Built with pure Python and standard library only. Use freely in open source and commercial projects.
+Unlicense — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
 **Author:** [Fkernel653](https://github.com/Fkernel653)
 
