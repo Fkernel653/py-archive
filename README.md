@@ -20,7 +20,6 @@
     - [fast_funcs](#fast_funcs--high-performance-built-in-alternatives)
   - [File System](#file-system)
     - [pathlib_ng](#pathlib_ng--enhanced-path-implementation)
-- [Python Version Requirements](#python-version-requirements)
 - [Philosophy](#philosophy)
 - [Finding What You Need](#finding-what-you-need)
 - [License & Acknowledgments](#license--acknowledgments)
@@ -209,16 +208,6 @@ if p.exists() and p.is_file():
 **[→ Read more](pathlib_ng/)**
 
 </details>
-
----
-
-## Python Version Requirements
-
-| Module         | Minimum Python Version | License   |
-| -------------- | ---------------------- | --------- |
-| **colors**     | Python 3.0+            | Unlicense |
-| **pathlib_ng** | Python 3.6+            | Unlicense |
-| **fast_funcs** | Python 3.8+            | Unlicense |
 
 ---
 
