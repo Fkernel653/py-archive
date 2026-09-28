@@ -9,7 +9,28 @@ A lightweight library providing ANSI escape codes for terminal text styling. Sup
 
 ---
 
-## 🚀 Quick Start
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Requirements](#requirements)
+- [Features](#features)
+- [Usage Examples](#usage-examples)
+  - [Color Constants](#color-constants)
+  - [Semantic Helpers](#semantic-helpers)
+  - [Custom Styling](#custom-styling)
+  - [Background Colors](#background-colors)
+  - [Style Combinations](#style-combinations)
+- [Available Constants](#available-constants)
+  - [Base Colors](#base-colors)
+  - [Bright Colors](#bright-colors)
+  - [Text Styles](#text-styles)
+  - [Background Colors](#background-colors-1)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+---
+
+## Quick Start
 
 ### Copy into your project
 
@@ -38,7 +59,14 @@ print(styled("Hello World", BOLD_RED, BG_BLUE))
 
 ---
 
-## ✨ Features
+## Requirements
+
+- **Python 3+** — Standard Python features
+- **No external dependencies** — Pure Python with standard library only
+
+---
+
+## Features
 
 - **🎨 16 Colors** — 8 base + 8 bright colors
 - **💪 8 Text Styles** — Bold, Dim, Italic, Underline, Blink, Reverse, Hidden, Strikethrough
@@ -53,7 +81,131 @@ print(styled("Hello World", BOLD_RED, BG_BLUE))
 
 ---
 
-## 📁 Project Structure
+## Usage Examples
+
+<details>
+<summary>Color Constants</summary>
+
+```python
+from colors import RED, GREEN, YELLOW, BLUE, RESET
+
+print(f"{RED}Error message{RESET}")
+print(f"{GREEN}Success message{RESET}")
+print(f"{YELLOW}Warning message{RESET}")
+print(f"{BLUE}Info message{RESET}")
+```
+
+</details>
+
+<details>
+<summary>Semantic Helpers</summary>
+
+```python
+from colors.utils import success, error, warning, info, hint
+
+success("Operation completed")     # Green output
+error("Something went wrong")      # Red output
+warning("Low disk space")          # Yellow output
+info("Processing 3 files")         # Blue output
+hint("Try using --help")           # Cyan output
+```
+
+</details>
+
+<details>
+<summary>Custom Styling</summary>
+
+```python
+from colors import BOLD_RED, BG_BLUE
+from colors.utils import styled
+
+# Combine style and background
+print(styled("Hello World", BOLD_RED, BG_BLUE))
+
+# Multiple styles
+from colors import BOLD, ITALIC, UNDERLINE
+print(f"{BOLD}{ITALIC}{UNDERLINE}Formatted text{RESET}")
+```
+
+</details>
+
+<details>
+<summary>Background Colors</summary>
+
+```python
+from colors import BG_RED, BG_GREEN, BG_BLUE, WHITE, RESET
+
+print(f"{BG_RED}{WHITE}Error background{RESET}")
+print(f"{BG_GREEN}{WHITE}Success background{RESET}")
+print(f"{BG_BLUE}{WHITE}Info background{RESET}")
+```
+
+</details>
+
+<details>
+<summary>Style Combinations</summary>
+
+```python
+from colors import BOLD_RED, BOLD_GREEN, UNDERLINE_BLUE, ITALIC_YELLOW
+
+print(f"{BOLD_RED}Bold red text{RESET}")
+print(f"{BOLD_GREEN}Bold green text{RESET}")
+print(f"{UNDERLINE_BLUE}Underlined blue text{RESET}")
+print(f"{ITALIC_YELLOW}Italic yellow text{RESET}")
+```
+
+</details>
+
+---
+
+## Available Constants
+
+### Base Colors
+
+| Constant  | Description |
+| --------- | ----------- |
+| `BLACK`   | Black       |
+| `RED`     | Red         |
+| `GREEN`   | Green       |
+| `YELLOW`  | Yellow      |
+| `BLUE`    | Blue        |
+| `MAGENTA` | Magenta     |
+| `CYAN`    | Cyan        |
+| `WHITE`   | White       |
+
+### Bright Colors
+
+| Constant         | Description    |
+| ---------------- | -------------- |
+| `BRIGHT_BLACK`   | Bright Black   |
+| `BRIGHT_RED`     | Bright Red     |
+| `BRIGHT_GREEN`   | Bright Green   |
+| `BRIGHT_YELLOW`  | Bright Yellow  |
+| `BRIGHT_BLUE`    | Bright Blue    |
+| `BRIGHT_MAGENTA` | Bright Magenta |
+| `BRIGHT_CYAN`    | Bright Cyan    |
+| `BRIGHT_WHITE`   | Bright White   |
+
+### Text Styles
+
+| Constant        | Description     |
+| --------------- | --------------- |
+| `BOLD`          | Bold text       |
+| `DIM`           | Dim text        |
+| `ITALIC`        | Italic text     |
+| `UNDERLINE`     | Underlined text |
+| `BLINK`         | Blinking text   |
+| `REVERSE`       | Reverse colors  |
+| `HIDDEN`        | Hidden text     |
+| `STRIKETHROUGH` | Struck text     |
+
+### Background Colors
+
+All base and bright colors are also available with the `BG_` prefix (e.g., `BG_RED`, `BG_BRIGHT_BLUE`).
+
+---
+
+## Project Structure
 
 ```
 colors/
@@ -61,21 +213,14 @@ colors/
 │   ├── __init__.py      # Package exports
 │   ├── _constants.py    # 172+ color and style constants
 │   └── utils.py         # Semantic helpers: styled, success, error, warning, info, hint
-├── LICENSE              # MIT License
+├── LICENSE              # Unlicense
 ├── pyproject.toml       # Project metadata
 └── README.md            # This file
 ```
 
 ---
 
-## ⚙️ Requirements
-
-- **Python 3+** — Standard Python features
-- **No external dependencies** — Pure Python with standard library only
-
----
-
-## 📄 License
+## License
 
 Unlicense — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 

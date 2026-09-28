@@ -9,7 +9,30 @@ A lightweight, drop-in replacement for `pathlib.Path` with enhanced features, be
 
 ---
 
-## 🚀 Quick Start
+## Table of Contents
+
+- [Quick Start](#quick-start-2)
+- [Requirements](#requirements-2)
+- [Features](#features-2)
+- [Migration from pathlib](#migration-from-pathlib)
+- [Usage Examples](#usage-examples-2)
+  - [Creating Paths](#creating-paths)
+  - [Path Properties](#path-properties)
+  - [File I/O](#file-io)
+  - [Directory Operations](#directory-operations)
+  - [File Management](#file-management)
+  - [Path Resolution](#path-resolution)
+  - [Glob Patterns](#glob-patterns)
+- [Real-World Examples](#real-world-examples)
+  - [Recursive File Search](#recursive-file-search)
+  - [Project Structure Validation](#project-structure-validation)
+  - [Batch File Processing](#batch-file-processing)
+- [Project Structure](#project-structure-2)
+- [License](#license-2)
+
+---
+
+## Quick Start
 
 ### Copy into your project
 
@@ -38,7 +61,14 @@ print(f"Parent: {p.parent}")  # projects/docs
 
 ---
 
-## ✨ Features
+## Requirements
+
+- **Python 3.6+** — Standard Python features
+- **No external dependencies** — Pure Python with standard library only
+
+---
+
+## Features
 
 - **📁 Complete API** — All standard `pathlib.Path` methods implemented
 - **🔗 Path Concatenation** — Overloaded `/` operator for intuitive path building
@@ -56,21 +86,7 @@ print(f"Parent: {p.parent}")  # projects/docs
 
 ---
 
-## 📁 Project Structure
-
-```
-pathlib-ng/
-├── pathlib_ng/
-│   ├── __init__.py      # Package exports
-│   └── path.py          # Path class implementation
-├── LICENSE              # MIT License
-├── pyproject.toml       # Project metadata
-└── README.md            # This file
-```
-
----
-
-## 🔄 Migration from pathlib
+## Migration from pathlib
 
 **pathlib-ng** is designed as a drop-in replacement. Most code works with minimal changes:
 
@@ -89,9 +105,10 @@ p.write_text("Hello")
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
-### Creating Paths
+<details>
+<summary>Creating Paths</summary>
 
 ```python
 from pathlib_ng import Path
@@ -107,7 +124,10 @@ p5 = Path.cwd() / "data" / "output.json"
 p = Path("projects") / "src" / "utils"
 ```
 
-### Path Properties
+</details>
+
+<details>
+<summary>Path Properties</summary>
 
 ```python
 p = Path("projects/docs/readme.md")
@@ -119,7 +139,10 @@ print(p.suffix)  # .md
 print(p.anchor)  # (empty string for relative path)
 ```
 
-### File I/O
+</details>
+
+<details>
+<summary>File I/O</summary>
 
 ```python
 p = Path("data.txt")
@@ -137,7 +160,10 @@ with open(p, "a") as f:
     f.write("Appended text")
 ```
 
-### Directory Operations
+</details>
+
+<details>
+<summary>Directory Operations</summary>
 
 ```python
 # Create directories
@@ -159,7 +185,10 @@ cwd = Path.cwd()
 home = Path.home()
 ```
 
-### File Management
+</details>
+
+<details>
+<summary>File Management</summary>
 
 ```python
 p = Path("file.txt")
@@ -186,7 +215,10 @@ print(f"Size: {stat.st_size} bytes")
 print(f"Modified: {stat.st_mtime}")
 ```
 
-### Path Resolution
+</details>
+
+<details>
+<summary>Path Resolution</summary>
 
 ```python
 # Resolve to absolute path (with symlinks resolved)
@@ -201,7 +233,10 @@ p = Path("~/Documents/file.txt")
 expanded = p.expanduser()  # /home/username/Documents/file.txt
 ```
 
-### Glob Patterns
+</details>
+
+<details>
+<summary>Glob Patterns</summary>
 
 ```python
 # Find all Python files
@@ -220,11 +255,14 @@ for dir in Path.cwd().glob("*/"):
 Path.cwd().glob("src/**/*.py")  # All Python files in src/ and subdirectories
 ```
 
+</details>
+
 ---
 
-## 💡 Real-World Examples
+## Real-World Examples
 
-### Recursive File Search
+<details>
+<summary>Recursive File Search</summary>
 
 ```python
 from pathlib_ng import Path
@@ -240,7 +278,10 @@ for f in txt_files:
     print(f"Found: {f}")
 ```
 
-### Project Structure Validation
+</details>
+
+<details>
+<summary>Project Structure Validation</summary>
 
 ```python
 from pathlib_ng import Path
@@ -264,7 +305,10 @@ for file_name in required_files:
         file_path.touch()
 ```
 
-### Batch File Processing
+</details>
+
+<details>
+<summary>Batch File Processing</summary>
 
 ```python
 from pathlib_ng import Path
@@ -289,16 +333,25 @@ def process_logs(log_dir):
         log_file.rename(archive_dir / log_file.name)
 ```
 
----
-
-## ⚙️ Requirements
-
-- **Python 3.6+** — Standard Python features
-- **No external dependencies** — Pure Python with standard library only
+</details>
 
 ---
 
-## 📄 License
+## Project Structure
+
+```
+pathlib-ng/
+├── pathlib_ng/
+│   ├── __init__.py      # Package exports
+│   └── path.py          # Path class implementation
+├── LICENSE              # Unlicense
+├── pyproject.toml       # Project metadata
+└── README.md            # This file
+```
+
+---
+
+## License
 
 Unlicense — Built with pure Python and standard library only. Use freely in open source and commercial projects.
 
